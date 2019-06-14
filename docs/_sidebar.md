@@ -1,6 +1,6 @@
-- Getting started
+- 시작하기
 
-  - [Quick start](quickstart.md)
+  - [빠른시작](quickstart.md)
   - [Writing more pages](more-pages.md)
   - [Custom navbar](custom-navbar.md)
   - [Cover page](cover.md)

@@ -1,38 +1,38 @@
-# Quick start
+# 빠른시작
 
-It is recommended to install `docsify-cli` globally, which helps initializing and previewing the website locally.
+웹사이트를 초기화하고 미리 보는데 도움을 주는 `docsify-cli`를 설치하는 것을 권장합니다.
 
 ```bash
 npm i docsify-cli -g
 ```
 
-## Initialize
+## 초기화
 
-If you want to write the documentation in the `./docs` subdirectory, you can use the `init` command.
+문서를 `./docs`의 하위 디렉토리에 쓰려면 `init` 커맨드를 사용하십시오.
 
 ```bash
 docsify init ./docs
 ```
 
-## Writing content
+## 내용 작성
 
-After the `init` is complete, you can see the file list in the `./docs` subdirectory.
+ `init` 이 완료되면,  `./docs` 의 하위 디렉토리에서 파일 목록을 볼 수 있습니다.
 
-* `index.html` as the entry file
-* `README.md` as the home page
-* `.nojekyll` prevents GitHub Pages from ignoring files that begin with an underscore
+- `index.html` 은 설정파일입니다.
+- `README.md` 는 홈페이지입니다.
+- `.nojekyll` 은 깃헙 페이지가 밑줄로 시작하는 파일을 무시하지 않도록 막아줍니다.
 
-You can easily update the documentation in `./docs/README.md`, of course you can add [more pages](more-pages.md).
+여러분은 `./docs/README.md` 을 쉽게 업데이트할 수 있고, 또한 [더 많은 페이지](more-pages.md)를 만들 수도 있습니다.
 
-## Preview your site
+## 사이트 미리보기
 
-Run the local server with `docsify serve`. You can preview your site in your browser on `http://localhost:3000`.
+ `docsify serve` 명령어로 로컬서버를 실행시킵니다.  `http://localhost:3000` 에서 사이트를 미리 볼 수 있습니다.
 
 ```bash
 docsify serve docs
 ```
 
-?> For more use cases of `docsify-cli`, head over to the [docsify-cli documentation](https://github.com/docsifyjs/docsify-cli).
+?> `docsify-cli` 에 대해서 더욱 알고 싶다면,  [docsify-cli documentation](https://github.com/docsifyjs/docsify-cli)로 이동하세요.
 
 ## Manual initialization
 
