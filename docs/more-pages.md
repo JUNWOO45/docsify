@@ -55,9 +55,9 @@ GitHub Pages가 밑줄로 시작하는 파일을 무시하지 않도록 `.nojeky
 
 사이드바를 현재 디렉터리가 어디에 위치해있는지 보여주는 역할을 하길 원할지도 모릅니다.  각각의 파일에`_sidebar.md`.를 넣어주면 됩니다.
 
-`_sidebar.md` is loaded from each level directory. If the current directory doesn't have `_sidebar.md`, it will fall back to the parent directory. If, for example, the current path is `/guide/quick-start`, the `_sidebar.md` will be loaded from `/guide/_sidebar.md`.
+`_sidebar.md` 는 디렉토리레벨에서 각각 로드됩니다 . 현재 디렉터리가 `_sidebar.md` 를 가지고 있지 않다면, 부모 디렉터리에 속하게 됩니다. 예를들어, 현재 디렉터리가 `/guide/quick-start` 라면,  `_sidebar.md` 는  `/guide/_sidebar.md` 로 로드될 것입니다.
 
-You can specify `alias` to avoid unnecessary fallback.
+ `alias` 를 구체적으로 작성하여 이러한 동작을 막을 수 있습니다.
 
 ```html
 <script>
@@ -70,11 +70,11 @@ You can specify `alias` to avoid unnecessary fallback.
 </script>
 ```
 
-!> You can create a `README.md` file in a subdirectory to use it as the landing page for the route.
+!> `README.md` 를 하위 디렉터리에 작성하면 해당 라우트의 랜딩페이지로써 동작하게 됩니다
 
-## Set Page Titles from Sidebar Selection
+## 사이드바에서 제목 설정하기
 
-A page's `title` tag is generated from the _selected_ sidebar item name. For better SEO, you can customize the title by specifying a string after the filename.
+페이지의 `title` 태그는 선택한 사이드바 아이템의 이름으로 생성됩니다. 더 나은 SEO를 위해, 파일이름 다음에 문자열을 작성하여 커스터마이징할 수 있습니다.
 
 ```markdown
 <!-- docs/_sidebar.md -->
@@ -82,11 +82,11 @@ A page's `title` tag is generated from the _selected_ sidebar item name. For bet
 * [Guide](guide.md "The greatest guide in the world")
 ```
 
-## Table of Contents
+## 목차
 
-Once you've created `_sidebar.md`, the sidebar content is automatically generated based on the headers in the markdown files.
+일단 `_sidebar.md` 를 만들면, 마크다운파일의 헤더를 기반으로 사이드바 내용이 자동으로 생성됩니다.
 
-A custom sidebar can also automatically generate a table of contents by setting a `subMaxLevel`, compare [subMaxLevel configuration](configuration.md#submaxlevel).
+ `subMaxLevel` 을 설정하면 목차를 자동으로 생성할 수 있습니다.  [subMaxLevel configuration](configuration.md#submaxlevel) 를 확인해보세요.
 
 ```html
 <!-- index.html -->
@@ -100,26 +100,26 @@ A custom sidebar can also automatically generate a table of contents by setting 
 <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
 ```
 
-## Ignoring Subheaders
+## 서브헤더 생략하기
 
-When `subMaxLevel` is set, each header is automatically added to the table of contents by default. If you want to ignore a specific header, add `{docsify-ignore}` to it.
+ `subMaxLevel`가 설정되면, 기본적으로 각각의 헤더는 자동으로 목차에 생성됩니다. 만약 특정 헤더를 생략하길 원한다면,  `{docsify-ignore}` 를 뒤에 붙이면 됩니다.
 
 ```markdown
 # Getting Started
 
 ## Header {docsify-ignore}
 
-This header won't appear in the sidebar table of contents.
+이 헤더는 사이드바 목차에 나타나지 않을 것입니다.
 ```
 
-To ignore all headers on a specific page, you can use `{docsify-ignore-all}` on the first header of the page.
+특정 페이지의 모든 목차를 생략하고 싶다면,  `{docsify-ignore-all}` 를 페이지의 첫번째 헤더에 추가하세요.
 
 ```markdown
 # Getting Started {docsify-ignore-all}
 
 ## Header
 
-This header won't appear in the sidebar table of contents.
+이 헤더는 사이드바 목차에 나타나지 않을 것입니다.
 ```
 
-Both `{docsify-ignore}` and `{docsify-ignore-all}` will not be rendered on the page when used.
+ `{docsify-ignore}` 와 `{docsify-ignore-all}` 는 페이지에 렌더링되지 않습니다.
