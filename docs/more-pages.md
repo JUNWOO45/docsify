@@ -1,8 +1,8 @@
-# More pages
+# 페이지 추가
 
-If you need more pages, you can simply create more markdown files in your docsify directory. If you create a file named `guide.md`, then it is accessible via `/#/guide`.
+페이지를 추가하고 싶다면, docsify 디렉터리 아래에 마크다운 파일만 생성하면 됩니다. 파일 이름을 `guide.md` 로 생성한다면, `/#/guide` 로 접근할 수 있습니다.
 
-For example, the directory structure is as follows:
+만약 디렉터리 구조가 다음과 같다면:
 
 ```text
 .
@@ -14,7 +14,7 @@ For example, the directory structure is as follows:
         └── guide.md
 ```
 
-Matching routes
+다음과같이 연결됩니다
 
 ```text
 docs/README.md        => http://domain.com
@@ -23,11 +23,11 @@ docs/zh-cn/README.md  => http://domain.com/zh-cn/
 docs/zh-cn/guide.md   => http://domain.com/zh-cn/guide
 ```
 
-## Sidebar
+## 사이드바
 
-In order to have sidebar, then you can create your own `_sidebar.md` (see [this documentation's sidebar](https://github.com/docsifyjs/docsify/blob/master/docs/_sidebar.md) for an example):
+사이드바를 만들기위해서는 `_sidebar.md` 를 만들어야합니다. ([사이드바 문서](https://github.com/docsifyjs/docsify/blob/master/docs/_sidebar.md)를 확인하세요):
 
-First, you need to set `loadSidebar` to **true**. Details are available in the [configuration paragraph](configuration.md#loadsidebar).
+우선, `loadSidebar`를 **true**로 설정합니다. 자세한사항은  [configuration paragraph](configuration.md#loadsidebar) 를 확인하세요.
 
 ```html
 <!-- index.html -->
@@ -40,7 +40,7 @@ First, you need to set `loadSidebar` to **true**. Details are available in the [
 <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
 ```
 
-Create the `_sidebar.md`:
+ `_sidebar.md` 를 만드세요:
 
 ```markdown
 <!-- docs/_sidebar.md -->
@@ -49,11 +49,11 @@ Create the `_sidebar.md`:
 * [Guide](guide.md)
 ```
 
-You need to create a `.nojekyll` in `./docs` to prevent GitHub Pages from ignoring files that begin with an underscore.
+GitHub Pages가 밑줄로 시작하는 파일을 무시하지 않도록 `.nojekyll` 을 `./docs` 안에 생성하세요.
 
-## Nested Sidebars
+## Nested 사이드바
 
-You may want the sidebar to update with only navigation to reflect the current directory. This can be done by adding a `_sidebar.md` file to each folder.
+사이드바를 현재 디렉터리가 어디에 위치해있는지 보여주는 역할을 하길 원할지도 모릅니다.  각각의 파일에`_sidebar.md`.를 넣어주면 됩니다.
 
 `_sidebar.md` is loaded from each level directory. If the current directory doesn't have `_sidebar.md`, it will fall back to the parent directory. If, for example, the current path is `/guide/quick-start`, the `_sidebar.md` will be loaded from `/guide/_sidebar.md`.
 

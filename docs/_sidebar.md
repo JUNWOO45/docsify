@@ -1,7 +1,7 @@
 - 시작하기
 
   - [빠른시작](quickstart.md)
-  - [Writing more pages](more-pages.md)
+  - [페이지 만들기](more-pages.md)
   - [Custom navbar](custom-navbar.md)
   - [Cover page](cover.md)
 
