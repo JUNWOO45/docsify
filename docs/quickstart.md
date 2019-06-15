@@ -34,9 +34,9 @@ docsify serve docs
 
 ?> `docsify-cli` 에 대해서 더욱 알고 싶다면,  [docsify-cli documentation](https://github.com/docsifyjs/docsify-cli)로 이동하세요.
 
-## Manual initialization
+## 직접 초기화하는 방법
 
-If you don't like `npm` or have trouble installing the tool, you can manually create `index.html`:
+만약 `npm`을 설치하기 싫거나 설치하는데 문제가 있다면, 직접 `index.html` 을 만들면 됩니다 :
 
 ```html
 <!-- index.html -->
@@ -61,15 +61,15 @@ If you don't like `npm` or have trouble installing the tool, you can manually cr
 </html>
 ```
 
-If you installed python on your system, you can easily use it to run a static server to preview your site.
+만약 파이썬을 설치했다면, 스태틱서버를 실행함으로써 쉽게 사이트를 미리볼 수 있습니다
 
 ```bash
 cd docs && python -m SimpleHTTPServer 3000
 ```
 
-## Loading dialog
+## 로딩메시지
 
-If you want, you can show a loading dialog before docsify starts to render your documentation:
+원한다면 docsify가 문서를 렌더링하기전에 로딩메시지를 보여줄 수 있습니다.
 
 ```html
   <!-- index.html -->
@@ -77,7 +77,7 @@ If you want, you can show a loading dialog before docsify starts to render your 
   <div id="app">Please wait...</div>
 ```
 
-You should set the `data-app` attribute if you changed `el`:
+만약 `el` 을 수정했다면 `data-app` 속성을 설정해줘야 합니다. :
 
 ```html
   <!-- index.html -->
@@ -91,4 +91,5 @@ You should set the `data-app` attribute if you changed `el`:
   </script>
 ```
 
-Compare [el configuration](configuration.md#el).
+[el configuration](configuration.md#el) 확인하기.
+
