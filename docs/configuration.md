@@ -1,6 +1,6 @@
 # Configuration
 
-You can configure the `window.$docsify`.
+ `window.$docsify` 를 설정할 수 있습니다.
 
 ```html
 <script>
@@ -17,7 +17,7 @@ You can configure the `window.$docsify`.
 - Type: `String`
 - Default: `#app`
 
-The DOM element to be mounted on initialization. It can be a CSS selector string or an actual HTMLElement.
+초기에 마운트 될 DOM 요소입니다. CSS선택자나 실제 HMLElement일 수 있습니다.
 
 ```js
 window.$docsify = {
@@ -30,7 +30,7 @@ window.$docsify = {
 - Type: `String`
 - Default: `null`
 
-Configure the repository url or a string of `username/repo` can add the [GitHub Corner](http://tholman.com/github-corners/) widget in the top right corner of the site.
+저장소 url이나  `username/repo` 를 오른쪽 상단 구석에  [GitHub Corner](http://tholman.com/github-corners/) 위젯에 추가할 수 있습니다.
 
 ```js
 window.$docsify = {
@@ -45,7 +45,7 @@ window.$docsify = {
 - Type: `Number`
 - Default: `6`
 
-Maximum Table of content level.
+최대 목차 레벨.
 
 ```js
 window.$docsify = {
@@ -58,7 +58,7 @@ window.$docsify = {
 - Type: `Boolean|String`
 - Default: `false`
 
-Loads navbar from the Markdown file `_navbar.md` if **true**, or else from the path specified.
+ 값이 **true** 면 `_navbar.md` 이나 지정한 위치에서 네비게이션바를 로드합니다.
 
 ```js
 window.$docsify = {
@@ -75,7 +75,7 @@ window.$docsify = {
 - Type: `Boolean|String`
 - Default: `false`
 
-Loads sidebar from the Markdown file `_sidebar.md` if **true**, or else from the path specified.
+  값이 **true** 면, `_sidebar.md` 이나 지정한 위치에서 사이드바를 로드합니다.
 
 ```js
 window.$docsify = {
@@ -92,7 +92,7 @@ window.$docsify = {
 - Type: `Number`
 - Default: `0`
 
-Add table of contents (TOC) in custom sidebar.
+커스텀 사이드바에 목차를 추가할 수 있습니다.
 
 ```js
 window.$docsify = {
@@ -105,7 +105,7 @@ window.$docsify = {
 - Type: `Boolean`
 - Default: `false`
 
-Scrolls to the top of the screen when the route is changed.
+라우트가 바뀌었을때 스크롤을 화면 최상단으로 올려줍니다.
 
 ```js
 window.$docsify = {
@@ -118,7 +118,7 @@ window.$docsify = {
 - Type: `String`
 - Default: `README.md`
 
-`README.md` in your docs folder will be treated as homepage for your website, but sometimes you may need to serve another file as your homepage.
+폴더내의 `README.md` 이 사이트의 홈페이지 역할을 하게 됩니다. 하지만 때로는 홈페이지가 될 다른 파일이 필요할 수도 있습니다.
 
 ```js
 window.$docsify = {
@@ -135,7 +135,7 @@ window.$docsify = {
 
 - Type: `String`
 
-Base path of the website. You can set it to another directory or another domain name.
+웹사이트의 기본 주소입니다. 다른 디렉터리나 다른 도메인주소로 세팅할 수 있습니다.
 
 ```js
 window.$docsify = {
@@ -155,9 +155,9 @@ window.$docsify = {
 - Type: `Boolean`
 - Default: `false`
 
-If **true** links are relative to the current context.
+ **true**면, 현재 위치의 상대경로값으로 연결됩니다.
 
-For example, the directory structure is as follows:
+예를들어, 현재 디렉터리 구조가 다음과 같다면:
 
 ```text
 .
@@ -171,7 +171,7 @@ For example, the directory structure is as follows:
             └── example.md
 ```
 
-With relative path **enabled** and current URL `http://domain.com/zh-cn/README`, given links will resolve to:
+상대경로를 **사용할 수 있습니다.** 현재 URL이 `http://domain.com/zh-cn/README`, 라면 다음처럼 사용할 수 있습니다.
 
 ```text
 guide.md              => http://domain.com/zh-cn/guide
@@ -195,7 +195,7 @@ window.$docsify = {
 - Type: `Boolean|String|String[]|Object`
 - Default: `false`
 
-Activate the [cover feature](cover.md). If true, it will load from `_coverpage.md`.
+ [커버 기능](cover.md) 을 사용하세요. 값이 true면, `_coverpage.md` 에서 커버페이지를 로드합니다.
 
 ```js
 window.$docsify = {
@@ -219,7 +219,7 @@ window.$docsify = {
 
 - Type: `String`
 
-Website logo as it appears in the sidebar, you can resize by CSS.
+사이드바에 표시되는 웹사이트 로고입니다.CSS로 사이즈조정이 가능합니다.
 
 ```js
 window.$docsify = {
@@ -231,7 +231,7 @@ window.$docsify = {
 
 - Type: `String`
 
-Website name as it appears in the sidebar.
+사이드바에 보일 웹사이트 이름입니다.
 
 ```js
 window.$docsify = {
@@ -244,7 +244,7 @@ window.$docsify = {
 - Type: `String`
 - Default: `window.location.pathname`
 
-The name of the link.
+링크의 이름입니다.
 
 ```js
 window.$docsify = {
@@ -262,7 +262,7 @@ window.$docsify = {
 
 - Type: `Function`
 
-See [Markdown configuration](markdown.md).
+ [Markdown configuration](markdown.md) 을 확인해 보세요.
 
 ```js
 window.$docsify = {
@@ -288,7 +288,7 @@ window.$docsify = {
 
 - Type: `String`
 
-Customize the theme color. Use [CSS3 variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables) feature and polyfill in old browser.
+테마 색상을 커스터마이징하세요. [CSS3 variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables) 기능을 사용하고, 오래된 브라우저에서는 폴리필을 사용하세요.
 
 ```js
 window.$docsify = {
@@ -300,7 +300,7 @@ window.$docsify = {
 
 - Type: `Object`
 
-Set the route alias. You can freely manage routing rules. Supports RegExp.
+라우트명을 설정하세요. 자유롭게 라우팅규칙을 설정할 수 있습니다. RegExp를 지원합니다.
 
 ```js
 window.$docsify = {
@@ -318,7 +318,7 @@ window.$docsify = {
 
 - type: `Boolean`
 
-If `loadSidebar` and `autoHeader` are both enabled, for each link in `_sidebar.md`, prepend a header to the page before converting it to html. Compare [#78](https://github.com/docsifyjs/docsify/issues/78).
+ `loadSidebar` 와 `autoHeader` 를 모두 사용중인 경우,  `_sidebar.md` 의 각 링크에 대해, 헤더를 html로 변환하기 전에 페이지를 미리 확인할 수 있습니다.  [#78](https://github.com/docsifyjs/docsify/issues/78) 를 확인해보세요.
 
 ```js
 window.$docsify = {
@@ -331,7 +331,7 @@ window.$docsify = {
 
 - type: `Boolean`
 
-Execute the script on the page. Only parse the first script tag([demo](themes)). If Vue is present, it is turned on by default.
+페이지에서 스크립트를 실행합니다. 첫번째 스크립트 태그만 해석가능합니다. 만약 Vue를 사용중이라면, 자동으로 활성화됩니다.
 
 ```js
 window.$docsify = {
@@ -347,13 +347,15 @@ window.$docsify = {
 </script>
 ```
 
-Note that if you are running an external script, e.g. an embedded jsfiddle demo, make sure to include the [external-script](plugins.md?id=external-script) plugin.
+jsfiddle데모와 같은 외부 스크립트를 돌리고 있다면, [외부 스크립트 플러그인](https://docsify.js.org/#/plugins?id=external-script)을 반드시 포함시키세요.
+
+##noEmoji
 
 ## noEmoji
 
 - type: `Boolean`
 
-Disabled emoji parse.
+이모지 parse를 끕니다.
 
 ```js
 window.$docsify = {
@@ -365,7 +367,7 @@ window.$docsify = {
 
 - type: `Boolean`
 
-Navbar will be merged with the sidebar on smaller screens.
+작은화면에서 네비게이션바를 사이드바에 합칩니다.
 
 ```js
 window.$docsify = {
@@ -377,8 +379,8 @@ window.$docsify = {
 
 - type: `String|Function`
 
-We can display the file update date through **{docsify-updated<span>}</span>** variable. And format it by `formatUpdated`.
-See https://github.com/lukeed/tinydate#patterns
+ **{docsify-updated<span>}</span>** 변수를 통해 파일 업데이트 날짜를 표시할 수 있습니다.
+ https://github.com/lukeed/tinydate#patterns 를 확인하세요.
 
 ```js
 window.$docsify = {
@@ -397,7 +399,7 @@ window.$docsify = {
 - type: `String`
 - default: `_blank`
 
-Target to open external links. Default `'_blank'` (new window/tab)
+외부링크를 열 수 있습니다. 기본값은 `'_blank'` 입니다.(new window/tab)
 
 ```js
 window.$docsify = {
@@ -420,7 +422,7 @@ window.$docsify = {
 
 - type: `Array`
 
-Sometimes we do not want docsify to handle our links. See [#203](https://github.com/docsifyjs/docsify/issues/203)
+때때로, docsify가 링크처리를 하지 않길 원할 수 있습니다. [#203](https://github.com/docsifyjs/docsify/issues/203) 를 확인하세요.
 
 ```js
 window.$docsify = {
@@ -432,7 +434,7 @@ window.$docsify = {
 
 - type: `Boolean`
 
-Only coverpage is loaded when visiting the home page.
+홈페이지를 방문했을때 커버페이지만 로드됩니다.
 
 ```js
 window.$docsify = {
@@ -444,7 +446,7 @@ window.$docsify = {
 
 - type: `Object`
 
-Set the request resource headers.
+리퀘스트헤더를 설정할 수 있습니다.
 
 ```js
 window.$docsify = {
@@ -458,7 +460,7 @@ window.$docsify = {
 
 - type: `String`
 
-Request file extension.
+파일 확장자를 요청할 수 있습니다.
 
 ```js
 window.$docsify = {
@@ -470,13 +472,13 @@ window.$docsify = {
 
 - type: `Array<string>`
 
-List of languages that will fallback to the default language when a page is request and didn't exists for the given local.
+페이지가 요청되었지만, 지정된 로컬에 존재하지않을때 기본 언어로 대체되는 언어 목록입니다.
 
-Example:
+예시:
 
-- try to fetch the page of `/de/overview`. If this page exists, it'll be displayed
-- then try to fetch the default page `/overview` (depending on the default language). If this page exists, it'll be displayed
-- then display 404 page.
+-  `/de/overview` 를 가져오려고 합니다. 페이지가 있으면, 화면에 표시됩니다.
+- 그 다음엔 `/overview` 페이지를 가져오려고 합니다.(기본 언어에 따라 다름). 페이지가 있으면, 화면에 표시됩니다.
+- 그 다음에 404페이지를 보여줍니다.
 
 ```js
 window.$docsify = {
@@ -488,7 +490,7 @@ window.$docsify = {
 
 - type: `Boolean` | `String` | `Object`
 
-Load the `_404.md` file:
+`_404.md` 을 로드합니다:
 
 ```js
 window.$docsify = {
@@ -496,7 +498,7 @@ window.$docsify = {
 };
 ```
 
-Load the customised path of the 404 page:
+커스터마이징한 404페이지를 불러옵니다:
 
 ```js
 window.$docsify = {
@@ -504,7 +506,7 @@ window.$docsify = {
 };
 ```
 
-Load the right 404 page according to the localisation:
+하위 디렉터리구분에 따른 적절한 404페이지를 로드합니다:
 
 ```js
 window.$docsify = {
@@ -515,4 +517,4 @@ window.$docsify = {
 };
 ```
 
-> Note: The options with fallbackLanguages didn't work with the `notFoundPage` options.
+> 주의:  fallbackLanguages 옵션은 `notFoundPage`  옵션과 함께 동작하지 않습니다.

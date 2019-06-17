@@ -3,11 +3,11 @@
   - [빠른시작](quickstart.md)
   - [페이지 만들기](more-pages.md)
   - [커스텀 네비게이션바](custom-navbar.md)
-  - [Cover page](cover.md)
+  - [커버페이지](cover.md)
 
-- Customization
+- 사용자 지정
 
-  - [Configuration](configuration.md)
+  - [환경설정](configuration.md)
   - [Themes](themes.md)
   - [List of Plugins](plugins.md)
   - [Write a Plugin](write-a-plugin.md)
