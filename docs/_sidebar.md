@@ -9,7 +9,7 @@
 
   - [환경설정](configuration.md)
   - [테마](themes.md)
-  - [List of Plugins](plugins.md)
+  - [플러그인 목록](plugins.md)
   - [Write a Plugin](write-a-plugin.md)
   - [Markdown configuration](markdown.md)
   - [Language highlighting](language-highlight.md)
