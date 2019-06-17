@@ -12,11 +12,11 @@
   - [플러그인 목록](plugins.md)
   - [플러그인 만들기](write-a-plugin.md)
   - [마크다운 환경설정](markdown.md)
-  - [Language highlighting](language-highlight.md)
+  - [문법 강조](language-highlight.md)
 
-- Guide
+- 가이드
 
-  - [Deploy](deploy.md)
+  - [배포](deploy.md)
   - [Helpers](helpers.md)
   - [Vue compatibility](vue.md)
   - [CDN](cdn.md)

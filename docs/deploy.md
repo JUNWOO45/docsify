@@ -1,21 +1,21 @@
 # Deploy
 
-Similar to [GitBook](https://www.gitbook.com), you can deploy files to GitHub Pages, GitLab Pages or VPS.
+ [GitBook](https://www.gitbook.com) 과 비슷하게, GitHub Pages, GitLab Pages 또는 VPS 에 배포할 수 있습니다..
 
 ## GitHub Pages
 
-There're three places to populate your docs for your Github repository:
+Github 레포지토리에 문서를 넣는 방법은 세가지가 있습니다:
 
 - `docs/` folder
 - master branch
 - gh-pages branch
 
-It is recommended that you save your files to the `./docs` subfolder of the `master` branch of your repository. Then select `master branch /docs folder` as your Github Pages source in your repositories' settings page.
+저장소의  `master` 브랜치의 `./docs` 하위폴더에 파일을 저장하는 것을 추천합니다. 그 다음 레포지토리 설정 페이지에서 `master branch /docs folder` 를 Github Pages 소스로 선택하세요.
 
 ![github pages](_images/deploy-github-pages.png)
 
-!> You can also save files in the root directory and select `master branch`.
-You'll need to place a `.nojekyll` file in the deploy location (such as `/docs` or the gh-pages branch
+!> 루트 데릭터리에 파일을 저장하고 `master branch` 를 선택할 수 있습니다.
+ `.nojekyll` 파일을 배포위치에 위치시켜야합니다. (예를 들어 `/docs` 또는 the gh-pages branch)
 
 ## GitLab Pages
 
@@ -127,5 +127,5 @@ frontend:
 | Source address | Target address | Type          |
 |----------------|----------------|---------------|
 | /<*>.md        | /<*>.md        | 200 (Rewrite) |
-| /<*>           | /index.html    | 200 (Rewrite) |        
+| /<*>           | /index.html    | 200 (Rewrite) |
 
