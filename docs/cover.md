@@ -1,10 +1,10 @@
 # Cover
 
-Activate the cover feature by setting `coverpage` to **true**, compare [coverpage configuration](configuration.md#coverpage).
+ `coverpage` 를 **true** 로 설정하여 활성화시킬 수 있습니다. 자세한 사항은 [coverpage configuration](configuration.md#coverpage) 를 참조하세요.
 
-## Basic usage
+## 기본 사용법
 
-Set `coverpage` to **true**, and create a `_coverpage.md`:
+ `coverpage` 를 **true**로 설정하고, `_coverpage.md` 를 만드세요:
 
 ```html
 <!-- index.html -->
@@ -34,11 +34,11 @@ Set `coverpage` to **true**, and create a `_coverpage.md`:
 [Get Started](#docsify)
 ```
 
-!> A document site can have only one coverpage!
+!> 사이트는 오직 하나의 커버페이지만 가질 수 있습니다!
 
 ## Custom background
 
-The background color is generated randomly by default. You can customize the background color or a background image:
+기본적으로 배경 색깔은 랜덤으로 생성되지만, 배경 색깔이나 배경 이미지를 커스터마이징 할 수 있습니다:
 
 ```markdown
 <!-- _coverpage.md -->
@@ -59,13 +59,13 @@ The background color is generated randomly by default. You can customize the bac
 
 ## Coverpage as homepage
 
-Normally, the coverpage and the homepage appear at the same time. Of course, you can also separate the coverpage by [onlyCover option](configuration.md#onlycover).
+일반적으로, 커버페이지와 홈페이지는 동시에 보여지게됩니다.  [onlyCover option](configuration.md#onlycover) 을 설정하여 분리 시킬 수 있습니다.
 
 ## Multiple covers
 
-If your docs site is in more than one language, it may be useful to set multiple covers.
+만약 당신의 사이트가 한개 이상의 언어로 이루어져 있다면, 커버를 나누는 것이 더 유용할 것입니다.
 
-For example, your docs structure is like this
+만약 문서 구조가 다음과 같다면,
 
 ```text
 .
@@ -79,7 +79,7 @@ For example, your docs structure is like this
         └── _coverpage.md
 ```
 
-Now, you can set
+다음과 같이 설정할 수 있습니다.
 
 ```js
 window.$docsify = {
@@ -87,7 +87,7 @@ window.$docsify = {
 };
 ```
 
-Or a special file name
+또는 파일 이름으로 설정할 수 도 있습니다.
 
 ```js
 window.$docsify = {

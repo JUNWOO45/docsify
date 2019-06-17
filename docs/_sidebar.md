@@ -2,7 +2,7 @@
 
   - [빠른시작](quickstart.md)
   - [페이지 만들기](more-pages.md)
-  - [Custom navbar](custom-navbar.md)
+  - [커스텀 네비게이션바](custom-navbar.md)
   - [Cover page](cover.md)
 
 - Customization
