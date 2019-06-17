@@ -1,6 +1,6 @@
 # Themes
 
-There are currently three themes available. Copy [Vue](//vuejs.org) and [buble](//buble.surge.sh) website custom theme and [@liril-net](https://github.com/liril-net) contribution to the theme of the black style.
+현재 3개의 테마를 사용할 수 있습니다.  [Vue](//vuejs.org) 와 [buble](//buble.surge.sh)사이트를 따라한 커스텀 주제와 [@liril-net](https://github.com/liril-net) 의 컨트리뷰션으로 사용할 수 있는 블랙 테마가 있습니다.
 
 ```html
 <link rel="stylesheet" href="//unpkg.com/docsify/themes/vue.css">
@@ -9,7 +9,7 @@ There are currently three themes available. Copy [Vue](//vuejs.org) and [buble](
 <link rel="stylesheet" href="//unpkg.com/docsify/themes/pure.css">
 ```
 
-!> Compressed files are available in `/lib/themes/`.
+!> 압축된 파일은 `/lib/themes/` 로 제공됩니다.
 
 ```html
 <!-- compressed -->
@@ -20,9 +20,9 @@ There are currently three themes available. Copy [Vue](//vuejs.org) and [buble](
 <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/pure.css">
 ```
 
-If you have any ideas or would like to develop a new theme, you are welcome to submit a [pull request](https://github.com/docsifyjs/docsify/pulls).
+좋은 아이디어를 가지고 있거나 좋은 테마를 개발했다면, [pull request](https://github.com/docsifyjs/docsify/pulls) 를 해주세요.
 
-#### Click to preview
+#### 미리보기
 
 <div class="demo-theme-preview">
   <a data-theme="vue">vue.css</a>
@@ -35,7 +35,6 @@ If you have any ideas or would like to develop a new theme, you are welcome to s
   .demo-theme-preview a {
     padding-right: 10px;
   }
-
   .demo-theme-preview a:hover {
     cursor: pointer;
     text-decoration: underline;
@@ -55,6 +54,6 @@ If you have any ideas or would like to develop a new theme, you are welcome to s
   };
 </script>
 
-## Other themes
+## 다른 테마
 
-- [docsify-themeable](https://jhildenbiddle.github.io/docsify-themeable/#/) A delightfully simple theme system for docsify.
+- [docsify-themeable](https://jhildenbiddle.github.io/docsify-themeable/#/) docsify를 위한 아주 간단한 테마입니다.

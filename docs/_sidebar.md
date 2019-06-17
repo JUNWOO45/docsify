@@ -8,7 +8,7 @@
 - 사용자 지정
 
   - [환경설정](configuration.md)
-  - [Themes](themes.md)
+  - [테마](themes.md)
   - [List of Plugins](plugins.md)
   - [Write a Plugin](write-a-plugin.md)
   - [Markdown configuration](markdown.md)
