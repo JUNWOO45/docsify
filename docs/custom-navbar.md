@@ -1,10 +1,10 @@
-# Custom navbar
+# 커스텀 네비게이션바
 
 ## HTML
 
-If you need custom navigation, you can create a HTML-based navigation bar.
+커스텀 네비게이션바를 만드려면, HTML기반으로 만들어야핣니다.
 
-!> Note that documentation links begin with `#/`.
+!> 문서는 `#/` 로 시작합니다.
 
 ```html
 <!-- index.html -->
@@ -18,9 +18,9 @@ If you need custom navigation, you can create a HTML-based navigation bar.
 </body>
 ```
 
-## Markdown
+## 마크다운
 
-Alternatively, you can create a custom markdown-based navigation file by setting `loadNavbar` to **true** and creating `_navbar.md`, compare [loadNavbar configuration](configuration.md#loadnavbar).
+또는, `loadNavbar`을**true**로 설정하고 `_navbar.md` 파일을 생성하여 마크다운 기반의 네비게이션 파일을 만들 수 있습니다. 자세한건 [loadNavbar configuration](configuration.md#loadnavbar) 을 참고하세요.
 
 ```html
 <!-- index.html -->
@@ -40,13 +40,13 @@ Alternatively, you can create a custom markdown-based navigation file by setting
 * [chinese](/zh-cn/)
 ```
 
-!> You need to create a `.nojekyll` in `./docs` to prevent GitHub Pages from ignoring files that begin with an underscore.
+!> GitHub Pages가 밑줄로 시작하는 파일을 무시하지 않도록 `.nojekyll` 을 `./docs` 안에 생성하세요.
 
-`_navbar.md` is loaded from each level directory. If the current directory doesn't have `_navbar.md`, it will fall back to the parent directory. If, for example, the current path is `/guide/quick-start`, the `_navbar.md` will be loaded from `/guide/_navbar.md`.
+`_navbar.md` 는 디렉터리 레벨에서 각각 로드됩니다. 만약 현재 디렉터리가 `_navbar.md` 를 가지고 있지 않다면, 상위 디렉터리의 navbar를 받습니다. 예를들어, 현재 위치가 `/guide/quick-start`, 라면, `_navbar.md` 는 `/guide/_navbar.md` 에서 로드됩니다.
 
 ## Nesting
 
-You can create sub-lists by indenting items that are under a certain parent.
+특정 부모 밑의 아이템들을 들여써서 하위리스트로 만들 수 있습니다.
 
 ```markdown
 <!-- _navbar.md -->
@@ -66,13 +66,13 @@ You can create sub-lists by indenting items that are under a certain parent.
   * [Language highlight](language-highlight.md)
 ```
 
-renders as
+는 다음과같이 렌더링됩니다.
 
 ![Nesting navbar](_images/nested-navbar.png 'Nesting navbar')
 
-## Combining custom navbars with the emoji plugin
+## emoji 플러그인을 사용하여 네비게이션바 커스텀하기
 
-If you use the [emoji plugin](plugins#emoji):
+ [emoji plugin](plugins#emoji) 를 사용한다면:
 
 ```html
 <!-- index.html -->
@@ -86,7 +86,7 @@ If you use the [emoji plugin](plugins#emoji):
 <script src="//unpkg.com/docsify/lib/plugins/emoji.min.js"></script>
 ```
 
-you could, for example, use flag emojis in your custom navbar Markdown file:
+커스텀 네비게이션 마크다운 파일안에서 이모지를 사용할 수 있습니다:
 
 ```markdown
 <!-- _navbar.md -->
