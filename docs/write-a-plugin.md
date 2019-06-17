@@ -1,55 +1,55 @@
 # Write a plugin
 
-A plugin is simply a function that takes `hook` as an argument. The hook supports handling of asynchronous tasks.
+플러그인은 `hook` 을 인자로 받는 간단한 함수입니다. hook은 비동기처리를 지원합니다.
 
-## Full configuration
+## 전체 구성
 
 ```js
 window.$docsify = {
   plugins: [
     function(hook, vm) {
       hook.init(function() {
-        // Called when the script starts running, only trigger once, no arguments,
+        // 스크립트가 실행되기 시작할때 호출됨. 한번만 트리거되며 인자는 없음.
       });
 
       hook.beforeEach(function(content) {
-        // Invoked each time before parsing the Markdown file.
+        // 마크다운파일을 해석하기전에 매번 호출됨.
         // ...
         return content;
       });
 
       hook.afterEach(function(html, next) {
-        // Invoked each time after the Markdown file is parsed.
-        // beforeEach and afterEach support asynchronous。
+        // 마크다운파일을 해석하기전에 매번 호출됨.
+        // beforeEach 와 afterEach 는 동기적인 상황을 지원。
         // ...
-        // call `next(html)` when task is done.
+        // task가 끝나면 `next(html)`호출.
         next(html);
       });
 
       hook.doneEach(function() {
-        // Invoked each time after the data is fully loaded, no arguments,
+        // 데이터가 완전히 로드된 후 매번 호출됨. 인자는 없음
         // ...
       });
 
       hook.mounted(function() {
-        // Called after initial completion. Only trigger once, no arguments.
+        // 초기 완료 후 호출됨. 한번만 트리거되고 인수는 없음.
       });
 
       hook.ready(function() {
-        // Called after initial completion, no arguments.
+        // 초기 완료 후 호출됨. 인수는 없음.
       });
     }
   ]
 };
 ```
 
-!> You can get internal methods through `window.Docsify`. Get the current instance through the second argument.
+!>  `window.Docsify` 을 통해 내부 메소드를 얻을 수 있습니다. 두번째 인자를 통해 현재 인스턴스를 얻을 수 있습니다.
 
-## Example
+## 예시
 
 #### footer
 
-Add footer component in each pages.
+footer 컴포넌트를 모든 페이지에 더하기.
 
 ```js
 window.$docsify = {
@@ -98,7 +98,7 @@ window.$docsify = {
 
 ## Tips
 
-### Get docsify version
+### docsify version 가져오기
 
 ```
 console.log(window.Docsify.version)
