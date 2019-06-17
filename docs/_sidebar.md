@@ -11,7 +11,7 @@
   - [테마](themes.md)
   - [플러그인 목록](plugins.md)
   - [플러그인 만들기](write-a-plugin.md)
-  - [Markdown configuration](markdown.md)
+  - [마크다운 환경설정](markdown.md)
   - [Language highlighting](language-highlight.md)
 
 - Guide
