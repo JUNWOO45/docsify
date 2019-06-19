@@ -1,8 +1,8 @@
 # CDN
 
-Recommended: [unpkg](//unpkg.com), which will reflect the latest version as soon as it is published to npm. You can also browse the source of the npm package at [unpkg.com/docsify/](//unpkg.com/docsify/).
+권장: npm에 게시되는 즉시 최신 버전을 반영하는 [unpkg](//unpkg.com) 를 권장합니다. [unpkg.com/docsify/](//unpkg.com/docsify/) 에서 npm 패키지의 소스를 찾아볼 수 있습니다.
 
-## Latest version
+## 최신 버전
 
 ```html
 <!-- load css -->
@@ -12,9 +12,9 @@ Recommended: [unpkg](//unpkg.com), which will reflect the latest version as soon
 <script src="//unpkg.com/docsify/lib/docsify.js"></script>
 ```
 
-Alternatively, use [compressed files](#compressed-file).
+또는, [압축 파일](#compressed-file) 를 사용하세요.
 
-## Specific version
+## 구체적인 버전
 
 ```html
 <!-- load css -->
@@ -24,7 +24,7 @@ Alternatively, use [compressed files](#compressed-file).
 <script src="//unpkg.com/docsify@2.0.0/lib/docsify.js"></script>
 ```
 
-## Compressed file
+## 압축 파일
 
 ```html
 <!-- load css -->
@@ -42,7 +42,7 @@ Alternatively, use [compressed files](#compressed-file).
 <script src="//unpkg.com/docsify@2.0.0/lib/docsify.min.js"></script>
 ```
 
-## Other CDN
+## 다른 CDN
 
 - http://www.bootcdn.cn/docsify
 - https://cdn.jsdelivr.net/npm/docsify/

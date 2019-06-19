@@ -1,12 +1,12 @@
 # Offline Mode
 
-[Progressive Web Apps](https://developers.google.com/web/progressive-web-apps/) (PWA) are experiences that combine the best of the web with the best of apps. We can enhance our website with service workers to work **offline** or on low-quality networks.
+[Progressive Web Apps](https://developers.google.com/web/progressive-web-apps/) (PWA) 웹과 앱의 장점을 결합해놓은 방식입니다. 네트워크 상태가 안좋거나, 서비스 제공자들이 오프라인인 상태에서도 웹사이트를 사용가능하게 해줍니다.
 
-It is also very easy to use it.
+또한 무척이나 사용하기 쉽습니다.
 
-## Create serviceWorker
+## serviceWorker 생성하기
 
-Create a `sw.js` file in your documents root directory and copy the following code:
+ `sw.js` 파일을 문서 루트 디렉터리 안에 생성하고 다음 코드를 붙여넣으세요:
 
 *sw.js*
 
@@ -96,9 +96,9 @@ self.addEventListener('fetch', event => {
 })
 ```
 
-## Register
+## 등록하기
 
-Now, register it in your `index.html`. It only works on some modern browsers, so we need to judge:
+이제 `index.html` 에 등록하세요. 일부 최신 브라우저에서만 작동하므로 다음과같이 판단해줘야 합니다.:
 
 *index.html*
 
@@ -110,6 +110,6 @@ Now, register it in your `index.html`. It only works on some modern browsers, so
 </script>
 ```
 
-## Enjoy it
+## 즐기기
 
-Release your website and start experiencing magical offline feature. :ghost: You can turn off Wi-Fi and refresh the current site to experience it.
+웹사이트를 열고 마법의 오프라인 기능을 경험해보세요. :ghost: 와이파이를 끄고 사이트를 새로고침해서 경험해볼 수 있습니다.

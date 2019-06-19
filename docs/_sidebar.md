@@ -20,7 +20,7 @@
   - [헬퍼](helpers.md)
   - [Vue 호환성](vue.md)
   - [CDN](cdn.md)
-  - [Offline Mode(PWA)](pwa.md)
+  - [오프라인 모드(PWA)](pwa.md)
   - [Server-Side Rendering(SSR)](ssr.md)
   - [Embed Files](embed-files.md)
 
