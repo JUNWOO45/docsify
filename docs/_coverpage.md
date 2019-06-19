@@ -2,11 +2,11 @@
 
 # docsify <small>4.9.4</small>
 
-> A magical documentation site generator.
+> 멋진 문서 사이트 생성기
 
-- Simple and lightweight (~21kB gzipped)
-- No statically built html files
-- Multiple themes
+- 간단하고 가벼움 (~21kB gzipped)
+- 정적 빌드 html 파일 없음
+- 다중 테마
 
 [GitHub](https://github.com/docsifyjs/docsify/)
-[Getting Started](#docsify)
+[시작하기](#docsify)

@@ -1,32 +1,32 @@
 ## docsify
 
-> A magical documentation site generator.
+> 멋진 문서 사이트 생성기
 
-## What it is
+## 설명
 
-docsify generates your documentation website on the fly. Unlike GitBook, it does not generate static html files. Instead, it smartly loads and parses your Markdown files and displays them as a website. To start using it, all you need to do is create an `index.html` and [deploy it on GitHub Pages](deploy.md).
+docsify는 즉시 당신의 문서 웹사이트를 생성해줍니다. GitBook과는 달리, 정적 html파일을 생성하지 않습니다. 대신에, 마크다운 파일을 똑똑하게 로드하고 분석하여 웹사이트로 표시합니다. `index.html` 을 생성하고 [GitHub Pages에 배포](deploy.md) 하면 docsify를 시작할 수 있습니다.
 
-See the [Quick start](quickstart.md) guide for more details.
+[빠른 시작](quickstart.md) 에서 더욱 자세한 사항을 확인해보세요.
 
-## Features
+## 특징
 
-- No statically built html files
-- Simple and lightweight (~21kB gzipped)
-- Smart full-text search plugin
-- Multiple themes
-- Useful plugin API
-- Emoji support
-- Compatible with IE11
-- Support server-side rendering ([example](https://github.com/docsifyjs/docsify-ssr-demo))
+- 정적 html파일 생성 안함
+- 간단하고 가벼움 (~21kB gzipped)
+- 스마트한 텍스트 검색 플러그인
+- 다중 테마
+- 유용한 플러그인 API
+- Emoji 지원
+- IE11와의 호환
+- 서버사이드 렌더링 지원 ([예시](https://github.com/docsifyjs/docsify-ssr-demo))
 
-## Examples
+## 데모
 
-Check out the [Showcase](https://github.com/docsifyjs/awesome-docsify#showcase) to see docsify in use.
+docsify를 사용한 [Showcase](https://github.com/docsifyjs/awesome-docsify#showcase) 를 확인해보세요.
 
-## Donate
+## 기부
 
-Please consider donating if you think docsify is helpful to you or that my work is valuable. I am happy if you can help me [buy a cup of coffee](https://github.com/QingWei-Li/donate). :heart:
+docsify가 여러분에게 도움이 되었거나, 저의 작업이 가치있다고 생각된다면 기부를 고려해주세요. [buy a cup of coffee](https://github.com/QingWei-Li/donate) 로 저에게 도움을 준다면 전 행복할 거에요. :heart:
 
-## Community
+## 커뮤니티
 
-Users and the development team are usually in the [Gitter chat room](https://gitter.im/docsifyjs/Lobby).
+사용자들과 개발팀은 보통 [Gitter chat room](https://gitter.im/docsifyjs/Lobby) 에 있습니다.
