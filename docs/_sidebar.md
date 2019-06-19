@@ -21,8 +21,8 @@
   - [Vue 호환성](vue.md)
   - [CDN](cdn.md)
   - [오프라인 모드(PWA)](pwa.md)
-  - [Server-Side Rendering(SSR)](ssr.md)
-  - [Embed Files](embed-files.md)
+  - [서버사이드 렌더링(SSR)](ssr.md)
+  - [파일 넣기](embed-files.md)
 
 - [Awesome docsify](awesome.md)
 - [Changelog](changelog.md)

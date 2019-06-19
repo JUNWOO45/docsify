@@ -1,22 +1,22 @@
 # Server-Side Rendering
 
-See https://docsify.now.sh
+https://docsify.now.sh를 확인해보세요
 
-Repo in https://github.com/docsifyjs/docsify-ssr-demo
+레포지토리 주소 : https://github.com/docsifyjs/docsify-ssr-demo
 
-## Why SSR?
-- Better SEO
-- Feeling cool
+## 왜 SSR인가?
+- 더 나은 SEO
+- 멋있어서
 
-## Quick start
+## 빠른 시작
 
-Install `now` and `docsify-cli` in your project.
+프로젝트에 `now` 와 `docsify-cli` 를 설치하세요.
 
 ```bash
 npm i now docsify-cli -D
 ```
 
-Edit `package.json`. If the documentation in `./docs` subdirectory.
+만약 문서가 `./docs` 의 하위 디렉터리 아래에 있다면, `package.json` 를 수정하세요. 
 
 ```json
 {
@@ -40,9 +40,9 @@ Edit `package.json`. If the documentation in `./docs` subdirectory.
 }
 ```
 
-!> The `basePath` just like webpack `publicPath`. We can use local or remote files.
+!>  `basePath` 는 webpack의 `publicPath` 와 같습니다. 로컬이나 원격 파일을 사용할 수 있습니다.
 
-We can preview in the local to see if it works.
+작동하는지 로컬에서 미리 볼 수 있습니다.
 
 ```bash
 npm start
@@ -56,11 +56,11 @@ Publish it!
 now -p
 ```
 
-Now, You have a support for SSR the docs site.
+이제 SSR에 대한 준비가 끝났습니다.
 
-## Custom template
+## 사용자 지정 템플릿
 
-You can provide a template for entire page's HTML. such as
+다음과 같은 전체 페이지의 HTML에 대한 템플릿은 제공할 수 있습니다.
 
 ```html
 <!DOCTYPE html>
@@ -83,13 +83,13 @@ You can provide a template for entire page's HTML. such as
 </html>
 ```
 
-The template should contain these comments for rendered app content.
+템플릿에는 렌더링된 앱 콘텐츠에 대한 설명이 포함되어야 합니다.
  - `<!--inject-app-->`
  - `<!--inject-config-->`
 
-## Configuration
+## 환경 설정
 
-You can configure it in a special config file, or `package.json`.
+특수한 config 파일이나 `package.json` 에서 설정할 수 있습니다.
 
 ```js
 module.exports = {
@@ -101,9 +101,9 @@ module.exports = {
 }
 ```
 
-## Deploy for your VPS
+## VPS에 맞게 배포
 
-You can run `docsify start` directly on your Node server, or write your own server app with `docsify-server-renderer`.
+ `docsify start` 를 Node 서버에서 직접 실행하거나,  `docsify-server-renderer` 를 이용해서 서버앱을 작성할 수 있습니다.
 
 ```js
 var Renderer = require('docsify-server-renderer')
