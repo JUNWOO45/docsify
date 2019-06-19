@@ -17,8 +17,8 @@
 - 가이드
 
   - [배포](deploy.md)
-  - [Helpers](helpers.md)
-  - [Vue compatibility](vue.md)
+  - [헬퍼](helpers.md)
+  - [Vue 호환성](vue.md)
   - [CDN](cdn.md)
   - [Offline Mode(PWA)](pwa.md)
   - [Server-Side Rendering(SSR)](ssr.md)

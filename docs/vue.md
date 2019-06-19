@@ -1,10 +1,10 @@
 # Compatible with Vue
 
-You can write Vue components directly in the Markdown file, and it will be parsed. You can use this feature to write vue demo and documentation together.
+마크다운 파일안에 직접적으로 Vue 컴포넌트를 작성할 수 있습니다. 이 기능을 사용해서 Vue 데모 및 설명서를 함께 쓸 수 있습니다.
 
-## Basic usage
+## 기본 사용법
 
-Load the Vue in `./index.html`.
+`./index.html` 에서 Vue를 불러옵니다.
 
 ```html
 <script src="//unpkg.com/vue"></script>
@@ -15,16 +15,16 @@ Load the Vue in `./index.html`.
 <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
 ```
 
-Then you can immediately write Vue code at Markdown file. `new Vue({ el: '#main' })` script is executed by default to create instance.
+이제 마크다운파일에서 Vue 코드를 즉시 작성할 수 있습니다. `new Vue({ el: '#main' })` 스크립트는 실행되어서 인스턴스를 생성합니다.
 
 *README.md*
 
 ````markdown
-# Vue guide
+# Vue 가이드
 
-`v-for` usage.
+`v-for` 사용법.
 
-```html
+​```html
 <ul>
   <li v-for="i in 10">{{ i }}</li>
 </ul>
@@ -35,11 +35,11 @@ Then you can immediately write Vue code at Markdown file. `new Vue({ el: '#main'
 </ul>
 ````
 
-You can manually initialize a Vue instance.
+Vue 인스턴스를 수동으로 초기화할 수 있습니다.
 
 *README.md*
 
-```markdown
+​```markdown
 # Vue demo
 
 <div id="main">hello {{ msg }}</div>
@@ -52,11 +52,11 @@ You can manually initialize a Vue instance.
 </script>
 ```
 
-!> In a Markdown file, only the script within the first script tag is executed.
+!> 마크다운 파일에서, 오직 첫번째 스크립트 태그만 실행됩니다.
 
 ## Combine Vuep to write playground
 
-[Vuep](https://github.com/QingWei-Li/vuep) is a component for rendering Vue components with live editor and preview. Supports Vue component spec and JSX.
+[Vuep](https://github.com/QingWei-Li/vuep) 는 라이브 편집기와 미리보기를 사용하여 Vue 컴포넌트를 렌더링해주는 컴포넌트입니다. Vue 컴포넌트 spec 및 JSX를 지원합니다.
 
 *index.html*
 
@@ -96,4 +96,4 @@ You can manually initialize a Vue instance.
 </script>
 ```
 
-?> Example Refer to the [Vuep documentation](https://qingwei-li.github.io/vuep/).
+?>  [Vuep documentation](https://qingwei-li.github.io/vuep/) 에서 다른 예시들을 찾아보세요.
